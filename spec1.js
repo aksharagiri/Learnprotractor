@@ -5,12 +5,13 @@ describe('calculator page', function() {
   
       
       element(by.model('first')).sendKeys('5');
-      element(by.model('second')).sendKeys("10")
+      element(by.model('second')).sendKeys("10");
       element(by.id('gobutton')).click().then(function(){
         browser.sleep(3000);
+
       })
-     
     
+   
     
 
     });
