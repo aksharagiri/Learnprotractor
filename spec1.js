@@ -1,10 +1,17 @@
-describe('angularjs homepage todo list', function() {
-    it('should add a todo', function() {
-      browser.get('https://www.juniper.net/').then(function(){
-        var request = require('request');
-
-   
-      })
+describe('calculator page', function() {
+    it('addition', function() {
       
-    })
-})
+      browser.get('http://juliemr.github.io/protractor-demo/');
+  
+      
+      element(by.model('first')).sendKeys('5');
+      element(by.model('second')).sendKeys("10")
+      element(by.id('gobutton')).click().then(function(){
+        browser.sleep(3000);
+      })
+     
+    
+    
+
+    });
+  });
